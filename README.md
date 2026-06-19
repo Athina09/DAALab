@@ -72,12 +72,29 @@ Analysis:
 - Speedup increases with array size, confirming the O(log log n) vs O(log n) advantage.
 - Both algorithms pass correctness verification across all test cases before benchmarking.
 
+### Performance Chart
+
+![Experiment 1: Interpolation Search vs Binary Search](experiment1_chart.png)
+
+Generate the static chart:
+
+```bash
+python3 experiment1_chart.py
+```
+
+For an interactive chart with adjustable array size, runs, and target position:
+
+```bash
+python3 experiment1_interactive_chart.py
+```
+
 ---
 
 ## Requirements
 
 - Python 3.x
-- No external packages required
+- Standard library only for `experiment1_interpolation_search.py`
+- `matplotlib` and `numpy` for chart scripts (`experiment1_chart.py`, `experiment1_interactive_chart.py`)
 
 ---
 
